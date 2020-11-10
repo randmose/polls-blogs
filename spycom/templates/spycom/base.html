@@ -1,0 +1,23 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    {% if title %}
+        <title>Pearl | {{ title }}</title>
+    {% else %}
+        <title>Pearl</title>
+    {% endif %}
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  </head>
+  <body>
+    {% include 'partials/_navbar.html' %}
+
+    {% block content %}{% endblock %}
+  </body>
+
+</html>
